@@ -16,7 +16,6 @@ module.exports = {
   plugins: [
     'react'
   ],
-  ignorePatterns: ['.eslintrc.cjs', 'vite.config.ts', 'scr'],
   rules: {
     'linebreak-style': ['off'],
     'import/extensions': ['off'],

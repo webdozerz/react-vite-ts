@@ -1,3 +1,5 @@
-export const ROUTERS_PUBLIC = {
-  HOME: '/'
+export const ROUTES = {
+  PUBLIC: {
+    HOME: '/'
+  }
 }

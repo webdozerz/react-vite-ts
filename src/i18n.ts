@@ -3,15 +3,19 @@ import { initReactI18next } from 'react-i18next'
 
 import { en } from './locales/en'
 
+const resources = {
+  en
+}
+
 void i18n
   .use(initReactI18next)
   .init({
-    debug: false,
+    debug: true,
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false
     },
-    resources: { en }
+    resources
   })
 
 export default i18n

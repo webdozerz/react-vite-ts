@@ -1,3 +1,8 @@
 export const en = {
-  hello: 'Hello, World!'
+  translation: {
+    hello: 'Hello, World!',
+    header: {
+      title: 'React Vite TS Prettier'
+    }
+  }
 }
