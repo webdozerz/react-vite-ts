@@ -8,7 +8,7 @@ function App (): JSX.Element {
       <header className="App-header">
         <p className="header">
           🚀 Vite + React + Typescript 🤘 & <br />
-          Eslint 🔥+ Prettier
+          Eslint 🔥+ Prettier 🔥
         </p>
 
         <div className="body">
