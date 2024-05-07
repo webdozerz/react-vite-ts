@@ -1,5 +1,6 @@
 import React, { JSX, useMemo } from 'react'
 import { observer } from 'mobx-react-lite'
+import { Outlet } from 'react-router-dom'
 
 import s from './styles.module.scss'
 
@@ -7,7 +8,7 @@ import Header from '~/components/Base/Header'
 
 import { useTranslation } from 'react-i18next'
 
-const DefaultLayout = ({ children }: { children: JSX.Element }): JSX.Element => {
+const DefaultLayout = (): JSX.Element => {
   const { t } = useTranslation()
 
   const title = useMemo(() => t('header.title'), [t])
@@ -16,7 +17,7 @@ const DefaultLayout = ({ children }: { children: JSX.Element }): JSX.Element => 
       <div className={s.default}>
           <Header title={title}/>
           <main className={s.default__main}>
-              {children}
+              <Outlet/>
           </main>
           <footer className={s.default__footer}>
               <h1>Footer</h1>

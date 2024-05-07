@@ -29,7 +29,7 @@ export const Header = ({
 
   const navLinks = useMemo(() => [
     {
-      path: ROUTES.PUBLIC.HOME,
+      path: ROUTES.PUBLIC.BASE,
       title: t('header.links.home')
     },
     {

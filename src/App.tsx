@@ -11,14 +11,14 @@ const About = React.lazy(async () => await import('./pages/About'))
 function App (): JSX.Element {
   return (
       <>
-        <DefaultLayout>
-            <React.Suspense fallback={<div>Loading...</div>}>
+          <React.Suspense fallback={<div>Loading...</div>}>
               <Routes>
-                <Route path={ROUTES.PUBLIC.HOME} element={<Home />} />
-                <Route path={ROUTES.PUBLIC.ABOUT} element={<About />} />
+                <Route path={ROUTES.PUBLIC.BASE} element={<DefaultLayout />}>
+                    <Route index element={<Home />} />
+                    <Route path={ROUTES.PUBLIC.ABOUT} element={<About />} />
+                </Route>
               </Routes>
             </React.Suspense>
-        </DefaultLayout>
       </>
   )
 }
